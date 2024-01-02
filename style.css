@@ -14,7 +14,10 @@ a{
 a:hover{
     color:#D5B048;
 }
-
+nav, li{
+    margin: 0;
+    padding: 0;
+}
 /* general setting end */
 
 /* header begin */
@@ -24,8 +27,10 @@ a:hover{
     /* background-color: #43A1D5; */
     width: 100%;
     align-items: center;
-    border-bottom: 0.2rem solid #666;
-    padding-top: 0.1rem;
+    border-bottom: 0.1rem solid #999;
+    padding: 0.2rem;
+    position: relative;
+
 }
 .logo {
     width: 4rem;
@@ -53,37 +58,53 @@ a:hover{
     padding: 1rem;
 }
 .material-symbols-outlined{
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
     color: #333;
 }
 .material-symbols-outlined:hover{
     cursor: pointer;
-
 }
 
 /* header end */
+/* main banner begin */
+.splide__slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 
+  }
+
+
+/* main banner end*/
 
 /* mobile setting begin */
 @media only screen and (max-width: 650px) {
-    body {
-      background-color: lightblue;
-    }
     #menuButton{
         display: flex;
     }
-    #header ul{
-        flex-direction: column;
+    #header nav{
+        position: absolute;
+        width: 100%;
+        top:3.25rem;
         max-height: 0;
         overflow: hidden;
     }
-    #header nav{
-        position: absolute;
-    }
-    #header nav .open{
+     #header .open{
         max-height: 80rem; 
-        position: relative;
-        top:10rem
+    }
+    #header ul{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #header nav li{
+        width: 90vh;
+        border-bottom: 0.1rem solid #999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #173E69;
     }
   }
 

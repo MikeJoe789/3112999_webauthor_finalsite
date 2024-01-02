@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/splide.min.css" />
+    <script src="js/splide.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,6 +17,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
+
     <title>Messi</title>
   </head>
   <body>
@@ -33,7 +37,26 @@
       </nav>
       <span class="material-symbols-outlined"> account_circle </span>
     </header>
-
+    <main>
+      <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="images/image01.jpg" alt="image01" />
+              <div>discribe 01</div>
+            </li>
+            <li class="splide__slide">
+              <img src="images/image02.jpg" alt="image02" />
+              <div>discribe 02</div>
+            </li>
+            <li class="splide__slide">
+              <img src="images/image03.jpg" alt="image03" />
+              <div>discribe 03</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
     <script src="script.js"></script>
   </body>
