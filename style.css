@@ -48,8 +48,8 @@ img {
   position: relative;
 }
 .logo {
-  width: 4rem;
-  height: 4rem;
+  width: 4em;
+  height: 4em;
 }
 #menuButton {
   display: flex;
@@ -57,6 +57,9 @@ img {
   justify-content: center;
   cursor: pointer;
   display: none;
+}
+#header nav {
+  width: 60%;
 }
 
 #header ul {
@@ -72,7 +75,7 @@ img {
   padding: 1rem;
 }
 .material-symbols-outlined {
-  font-size: 2.5rem !important;
+  font-size: 2.5em !important;
   color: #fff;
 }
 .material-symbols-outlined:hover {
@@ -238,8 +241,33 @@ img {
 
 /* footer begin */
 footer {
+  width: 90vw;
   padding: 2rem;
+  margin: 0 auto;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.1rem;
+  text-align: center;
+  border-top: 0.1rem solid #666;
+}
+.footer-left {
+  flex: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-left img {
+  width: 6rem;
+  height: 6rem;
+}
+.footer-right {
+  flex: 70%;
+  background-color: #000;
+  display: flex;
+}
+.footer-nav {
+  flex: 25%;
 }
 
 /* footer end */
@@ -250,6 +278,9 @@ footer {
 @media only screen and (max-width: 992px) {
   body {
     font-size: 16px;
+  }
+  #header nav {
+    width: 80%;
   }
   /* main css begin */
   .left-fixtures-news-wrapper {
@@ -267,6 +298,12 @@ footer {
     height: 18em;
   }
   /* main css end */
+
+  /* footer begin */
+  footer {
+    margin-left: 0.1rem;
+  }
+  /* footer end */
 }
 
 /* 650 */
@@ -327,4 +364,10 @@ footer {
     height: 12em;
   }
   /* main fixtures end */
+
+  /* footer begin */
+  footer {
+    margin-left: -0.5rem;
+  }
+  /* footer end */
 }
