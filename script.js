@@ -4,7 +4,28 @@ let menu = document.querySelector("#header nav");
 menuButton.addEventListener("click", () => {
   menu.classList.toggle("open");
 });
+
 // menu button end
+
+// showDropdown menu begin
+
+function showDropdown() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function (event) {
+  if (!event.target.matches(".dropdown li")) {
+    let dropdowns = document.getElementsByClassName("dropdown-content");
+    for (let i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains("show")) {
+        openDropdown.classList.remove("show");
+      }
+    }
+  }
+};
+
+// showDropdown menu end
 
 // splide begin
 new Splide("#image-carousel").mount();
