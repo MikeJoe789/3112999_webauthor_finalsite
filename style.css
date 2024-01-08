@@ -278,7 +278,26 @@ img {
 }
 
 /* main fixtures end */
+/* news begin */
+.news {
+  width: 90%;
+  height: 18em;
+  margin: 0 auto;
+  background-color: #123fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 1em;
+  gap: 1em;
+}
+.news-item {
+  height: 18em;
+  flex: 18%;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
 
+/* news end */
 /* gallery begin */
 .gallery-wrapper {
   width: 90vw;
