@@ -117,10 +117,10 @@ img {
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+  font-size: 0.8em;
+  padding: 0.4em 0.6em;
   position: absolute;
-  bottom: 8px;
+  bottom: 0.2em;
   width: 100%;
   text-align: center;
 }
@@ -434,7 +434,7 @@ footer {
   }
   .dropdown-content a {
     width: 100%;
-    height: 1.2em;
+    height: 3.5em;
     border-bottom: 0.1em solid #fff;
   }
   .header-nav li:hover .dropdown-content {
