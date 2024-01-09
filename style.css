@@ -153,7 +153,7 @@ img {
 /* main fixtures begin */
 .fixtures {
   width: 100%;
-  border-radius: 0.5em;
+  border-radius: 0.3em;
 }
 .fixtures-header {
   display: flex;
@@ -194,7 +194,7 @@ img {
 .right-fixtures-news-wrapper {
   height: 40vh;
   overflow: hidden;
-  border-radius: 1em;
+  border-radius: 0.3em;
 }
 .left-fixtures-news-wrapper {
   background-color: #fff;
@@ -243,13 +243,14 @@ img {
   box-shadow: 0.05em 0.05em 0.05em #aaa;
   background-color: #fff;
   overflow: hidden;
-  border-radius: 1em;
+  border-radius: 0.3em;
 }
 .right-fixtures-news-item img {
   width: 50%;
   height: 100%;
-  border-radius: 1em;
+  border-radius: 0.3em;
   transform: scale(1);
+  object-fit: cover;
 }
 
 .right-fixtures-news-text {
@@ -261,7 +262,7 @@ img {
 }
 .right-fixtures-news-text a {
   display: block;
-  height: 15%;
+  height: 28%;
   width: 100%;
   font-size: 1.2em;
   font-weight: bold;
@@ -281,38 +282,49 @@ img {
 /* news begin */
 .news {
   width: 90%;
-  height: 18em;
+  height: 18.5em;
   margin: 0 auto;
-  background-color: #123fff;
+  /* background-color: #123fff; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 1em;
-  gap: 1em;
+  gap: 0.5em;
 }
 .news-item {
-  height: 18em;
-  flex: 18%;
-  flex-wrap: wrap;
+  height: 9em;
+  flex: 30%;
   background-color: #fff;
+  border-radius: 0.2em;
 }
-
+.news-item a,
+.news-item span {
+  color: #000;
+}
+.news-item img {
+  height: 100%;
+  width: 13em;
+  float: left;
+}
+.news-item-text-wrapper {
+  padding-left: 13.5em;
+}
 /* news end */
 /* gallery begin */
 .gallery-wrapper {
   width: 90vw;
-  height: 36em;
+  height: 32em;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  gap: 1em;
+  gap: 0.4em;
   flex-wrap: wrap;
   overflow: hidden;
 }
 .gallery1 {
   flex: 23%;
   height: 16em;
-  border-radius: 1em;
+  border-radius: 0.3em;
   background-color: #fff;
   overflow: hidden;
   box-shadow: 0.05em 0.05em 0.05em #aaa;
@@ -335,7 +347,7 @@ img {
 footer {
   width: 90vw;
   padding: 2em;
-  margin: 0 auto;
+  margin: 0.5em auto;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -382,8 +394,15 @@ footer {
   .right-fixtures-news-wrapper {
     height: 30em;
   }
+  .news {
+    height: 29em;
+  }
+  .news-item {
+    flex: 48%;
+  }
+
   .gallery-wrapper {
-    height: 79em;
+    height: 75em;
   }
   .gallery1 {
     flex: 40%;
@@ -474,8 +493,20 @@ footer {
   .right-fixtures-news-text {
     padding: 0.5em 1em;
   }
+  .news {
+    height: 60em;
+  }
+  .news-item {
+    flex: 90%;
+  }
+  .news-item img {
+    width: auto;
+  }
+  .news-item-text-wrapper {
+    padding-left: 17.5em;
+  }
   .gallery-wrapper {
-    height: 52em;
+    height: 51em;
   }
   .gallery1 {
     height: 12em;
