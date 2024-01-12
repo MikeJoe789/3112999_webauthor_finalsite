@@ -76,7 +76,3 @@ let x = setInterval(function () {
 }, 1000);
 
 // timer end
-
-// ABOUT ACHIEVEMENT BEGIN
-
-// ABOUT ACHIEVEMENT END
