@@ -79,9 +79,30 @@ setInterval(function () {
 // timer end
 // gallery image click scale begin
 
-let img = document.querySelector(".column-img");
-img.addEventListener("click", () => {
-  console.log(img.src);
-});
+var modal = document.getElementById("myModal");
+var img = document.getElementsByClassName("column-img");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+// img.addEventListener("click", () => {
+//   console.log(img.src);
+//   modal.classList.add("show-block");
+//   let imgUrl = img.src;
+//   modalImg.src = imgUrl;
+//   console.log(imgUrl);
+//   captionText.innerHTML = this.alt;
+// });
+img.onclick = function () {
+  console.log("0");
+};
 
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.classList.remove("show-block");
+};
 // gallery image click scale end
+
+//fans page begin
+
+//fans page end
