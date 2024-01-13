@@ -51,7 +51,7 @@ function showSlides() {
 let countDownDate = new Date("July 5, 2024 15:37:25").getTime();
 
 // Update the count down every 1 second
-let x = setInterval(function () {
+setInterval(function () {
   // Get today's date and time
   let now = new Date().getTime();
 
@@ -65,10 +65,11 @@ let x = setInterval(function () {
   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("timer").innerHTML =
-    days + "D  " + hours + "H  " + minutes + "M  " + seconds + "S";
-
-  // If the count down is finished, write some text
+  let timerHtml = document.getElementById("timer");
+  if (timerHtml) {
+    timerHtml.innerHTML =
+      days + "D  " + hours + "H  " + minutes + "M  " + seconds + "S";
+  }
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("timer").innerHTML = "EXPIRED";
@@ -76,3 +77,11 @@ let x = setInterval(function () {
 }, 1000);
 
 // timer end
+// gallery image click scale begin
+
+let img = document.querySelector(".column-img");
+img.addEventListener("click", () => {
+  console.log(img.src);
+});
+
+// gallery image click scale end

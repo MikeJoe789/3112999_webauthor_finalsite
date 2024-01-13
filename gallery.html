@@ -3,7 +3,177 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>News</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="css/splide.min.css" /> -->
+    <!-- <script src="js/splide.min.js"></script> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Oswald:wght@600&family=Roboto+Condensed:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <title>Messi</title>
   </head>
-  <body></body>
+  <body>
+    <header id="header">
+      <img class="logo" src="images/logo.png" alt="logo" />
+      <div id="menuButton">
+        <span class="material-symbols-outlined header-icon"> menu </span>
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li>
+            <a class="top-nav" href="/">Home</a>
+          </li>
+          <li>
+            <a class="top-nav" href="about.html">About</a>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="about.html">Achievment</a>
+              <a href="about-China.html">Messi&Me&China</a>
+            </div>
+          </li>
+          <li>
+            <a class="top-nav" href="news.html">News</a>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="news.html">fixtures&Results</a>
+              <a href="news.html">Player State</a>
+            </div>
+          </li>
+          <li>
+            <a class="top-nav" href="gallery.html">Gallery</a>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="gallery.html">Pictures</a>
+              <a href="gallery.html">Videos</a>
+            </div>
+          </li>
+          <li>
+            <a class="top-nav" href="fans.html">Fans</a>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="fans.html">Club</a>
+              <a href="fans.html">Shop</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <span class="material-symbols-outlined header-icon">
+        account_circle
+      </span>
+    </header>
+    <main>
+      <section class="slideshow-container">
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">1 / 3</div> -->
+          <img src="images/image01.jpg" style="width:100%">
+          <div class="text">Training At Night</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">2 / 3</div> -->
+          <img src="images/image02.jpg" style="width:100%">
+          <div class="text">Matches With CLUB</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">3 / 3</div> -->
+          <img src="images/image03.jpg" style="width:100%">
+          <div class="text">Football Playground</div>
+      </section>
+      <section class="pictures">
+        <div class="row">
+          <div class="column">
+            <img class="column-img" src="images/news01.jpg">
+            <img src="images/news02.jpg">
+            <img src="images/news03.jpg">
+            <img src="images/news04.jpg">
+            <img src="images/news05.jpg">
+            <img src="images/news06.jpg">
+            <img src="images/news01.jpg">
+          </div>
+          <div class="column">
+            <img src="images/news02.jpg">
+            <img src="images/news03.jpg">
+            <img src="images/news04.jpg">
+            <img src="images/news05.jpg">
+            <img src="images/news05.jpg">
+            <img src="images/news06.jpg">
+            <img src="images/news01.jpg">
+          </div>
+          <div class="column">
+            <img src="images/news02.jpg">
+            <img src="images/news03.jpg">
+            <img src="images/news04.jpg">
+            <img src="images/news05.jpg">
+            <img src="images/news06.jpg">
+            <img src="images/news06.jpg">
+            <img src="images/news01.jpg">
+          </div>
+          <div class="column">
+            <img src="images/news06.jpg">
+            <img src="images/news05.jpg">
+            <img src="images/news06.jpg">
+            <img src="images/news06.jpg">
+            <img src="images/news01.jpg">
+            <img src="images/news01.jpg">
+            <img src="images/news02.jpg">
+            
+          </div>
+        </div>
+        <div class="scale-img">1
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-left">
+        <img src="images/logo.png" alt="">
+        <p>© Griffith College</p>
+        <p>Interactive Digital Media</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-nav">
+          <h3>
+            <a href="about.html">ABOUT</a>
+          </h3>
+          <p>
+            <a href="about.html">Achievements</a>
+          </p>
+          <a href="about-China.html">Messi and China</a>
+        </div>
+        <div class="footer-nav">
+          <h3>
+            <a href="news.html">NEWS</a>
+          </h3>
+          <p>
+            <a href="">Fixtures & Results</a>
+          </p>
+          <a href="">Player Stats</a>
+        </div>
+        <div class="footer-nav">
+          <h3>
+            <a href="about.html">GALLERY</a>
+          </h3>
+          <p>
+            <a href="">Pictures</a>
+          </p>
+          <a href="">News</a>
+        </div>
+        <div class="footer-nav">
+          <h3>
+            <a href="about.html">FANS</a>
+          </h3>
+          <p>
+            <a href="">Club</a>
+          </p>
+          <a href="">Shop</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
