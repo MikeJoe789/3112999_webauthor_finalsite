@@ -79,43 +79,47 @@ setInterval(function () {
 // timer end
 // gallery image click scale begin
 
-var modal = document.getElementById("myModal");
-var img = document.getElementsByClassName("column-img");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-// img.addEventListener("click", () => {
-//   console.log(img.src);
-//   modal.classList.add("show-block");
-//   let imgUrl = img.src;
-//   modalImg.src = imgUrl;
-//   console.log(imgUrl);
-//   captionText.innerHTML = this.alt;
-// });
-// img.onclick = function () {
-//   console.log("0");
-// };
+var modal = document.querySelector("#myModal");
+var img = document.querySelectorAll(".column-img");
+var modalImg = document.querySelector("#img01");
+var captionText = document.querySelector("#caption");
+if (modal) {
+  for (let i = 0; i < img.length; i++) {
+    img[i].addEventListener("click", function () {
+      // console.log(img[i].src);
+      modal.classList.add("show-block");
+      let imgUrl = img[i].src;
+      modalImg.src = imgUrl;
+      captionText.innerHTML = this.alt;
+      // cbox[i].classList.toggle("red");
+    });
+  }
 
-// var span = document.getElementsByClassName("close")[0];
+  var span = document.getElementsByClassName("close")[0];
 
-// span.onclick = function () {
-//   modal.classList.remove("show-block");
-// };
+  span.onclick = function () {
+    modal.classList.remove("show-block");
+  };
+}
+
 // gallery image click scale end
 
 //fans page begin
 let txt = document.querySelector("#message-board");
 let btn = document.querySelector("#message-submit");
 let ul = document.querySelector(".message-ul");
-btn.onclick = function () {
-  if (txt.value == "") {
-    alert("Please put in text");
-  } else {
-    let li = document.createElement("li");
-    ul.appendChild(li);
+if (btn) {
+  btn.onclick = function () {
+    if (txt.value == "") {
+      alert("Please put in text");
+    } else {
+      let li = document.createElement("li");
+      ul.appendChild(li);
 
-    li.innerHTML = txt.value;
-    txt.value = "";
-  }
-};
+      li.innerHTML = txt.value;
+      txt.value = "";
+    }
+  };
+}
 
 //fans page end
