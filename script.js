@@ -91,18 +91,31 @@ var captionText = document.getElementById("caption");
 //   console.log(imgUrl);
 //   captionText.innerHTML = this.alt;
 // });
-img.onclick = function () {
-  console.log("0");
-};
+// img.onclick = function () {
+//   console.log("0");
+// };
 
-var span = document.getElementsByClassName("close")[0];
+// var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  modal.classList.remove("show-block");
-};
+// span.onclick = function () {
+//   modal.classList.remove("show-block");
+// };
 // gallery image click scale end
 
 //fans page begin
+let txt = document.querySelector("#message-board");
+let btn = document.querySelector("#message-submit");
+let ul = document.querySelector(".message-ul");
+btn.onclick = function () {
+  if (txt.value == "") {
+    alert("Please put in text");
+  } else {
+    let li = document.createElement("li");
+    ul.appendChild(li);
+
+    li.innerHTML = txt.value;
+    txt.value = "";
+  }
+};
 
 //fans page end

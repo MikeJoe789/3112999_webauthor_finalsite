@@ -728,6 +728,67 @@ footer {
 
 /* gallery page end */
 
+/* fans page begin */
+
+.club-logo {
+  /* width: 80%; */
+  margin: 0 auto;
+  padding-top: 1em;
+  display: flex;
+  justify-content: space-evenly;
+}
+.club-logo img {
+  border-radius: 50%;
+  border: #d5b048 0.3em solid;
+}
+
+.message-board-container {
+  width: 80%;
+  margin: 1em auto;
+  padding: 0 2em 2em;
+  background-color: #eee;
+  border-radius: 0.2em;
+  color: #000;
+  text-align: center;
+}
+.message-board-container h2 {
+  width: 100%;
+  padding: 1em;
+  border-bottom: 0.1em #d5b048 solid;
+}
+#message-board {
+  outline: none;
+  border: 1px solid #bbb;
+  resize: none;
+  box-sizing: border-box;
+  max-width: 95%;
+}
+#message-submit {
+  width: 8em;
+  height: 3em;
+  border-radius: 0.3em;
+  background-color: #43a1d5;
+  color: #fff;
+  font-size: 1em;
+  font-family: "Oswald", sans-serif;
+}
+.message-ul {
+  width: 80%;
+  margin: 0 auto;
+}
+.message-ul li {
+  padding: 0.5em;
+  width: 100%;
+  background-color: #ddd;
+  font-size: 1.2em;
+  margin: 0.5em 0;
+  border-radius: 0.2em;
+}
+.message-ul li a {
+  float: right;
+}
+/* fans page end */
+
 /* mobile setting begin */
 
 /* 1100 */
@@ -1008,4 +1069,12 @@ footer {
     max-width: 100%;
   }
   /* gallery end */
+  /* fans page begin */
+  .club-logo img {
+    width: 6em;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  /* fans page end */
 }
