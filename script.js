@@ -83,7 +83,7 @@ var modal = document.querySelector("#myModal");
 var img = document.querySelectorAll(".column-img");
 var modalImg = document.querySelector("#img01");
 var captionText = document.querySelector("#caption");
-if (modal) {
+if (img) {
   for (let i = 0; i < img.length; i++) {
     img[i].addEventListener("click", function () {
       // console.log(img[i].src);
