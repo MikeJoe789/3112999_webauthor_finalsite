@@ -617,6 +617,35 @@ footer {
 }
 /* news grid end */
 
+/* playerstats begin */
+.stats-container {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Oswald", sans-serif;
+}
+.stats-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+  padding: 0.5em 2em;
+}
+.yellow {
+  color: #ffff00;
+}
+.red {
+  color: #ff0000;
+}
+.stats-text {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 100;
+  font-size: 0.8em;
+  color: #bbb;
+  border-bottom: 0.05em #bbb solid;
+  padding: 0.5em 3em;
+}
+/* playerstats end */
+
 /* gallery begin */
 .pictures {
   width: 80%;
@@ -654,10 +683,9 @@ footer {
   opacity: 0.7;
 }
 
-/* The Modal (background) */
 .modal {
   display: none;
-  position: fixed; /* Stay in place */
+  position: fixed;
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
@@ -680,7 +708,6 @@ footer {
   max-width: 700px;
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
   margin: auto;
   display: block;
@@ -727,6 +754,18 @@ footer {
 }
 
 /* gallery page end */
+/* video page begin */
+.videos {
+  margin: 0 auto;
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  margin-top: 1em;
+  gap: 1em;
+  justify-content: space-between;
+}
+
+/* video page end */
 
 /* fans page begin */
 

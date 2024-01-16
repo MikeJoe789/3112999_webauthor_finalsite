@@ -94,12 +94,12 @@ if (img) {
       // cbox[i].classList.toggle("red");
     });
   }
-
   var span = document.getElementsByClassName("close")[0];
-
-  span.onclick = function () {
-    modal.classList.remove("show-block");
-  };
+  if (span) {
+    span.onclick = function () {
+      modal.classList.remove("show-block");
+    };
+  }
 }
 
 // gallery image click scale end
