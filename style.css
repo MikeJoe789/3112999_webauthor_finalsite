@@ -828,6 +828,22 @@ footer {
 }
 /* fans page end */
 
+/* news article begin  */
+.news-content {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.news-article {
+  flex: 60%;
+}
+#latest-news {
+  flex: 30%;
+}
+
+/* news article end */
+
 /* mobile setting begin */
 
 /* 1100 */

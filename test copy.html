@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>copy</title>
+  </head>
+  <body>
+    <a href=""></a>
+    who is this
+    <img id="newsImg" src="" alt="" />
+    <p class="t"></p>
+
+    <script>
+      fetch("news.json")
+        .then((response) => response.json())
+        .then((data) => {
+          for (let index = 0; index < data.length; index++) {
+            const element = data[index];
+            if (element.id == 1) {
+              let p = document.querySelector(".t");
+              p.innerHTML = element.id;
+              let newsImg = document.querySelector("#newsImg");
+              newsImg.src = element.url;
+            }
+          }
+        });
+    </script>
+  </body>
+</html>
