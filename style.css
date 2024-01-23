@@ -258,11 +258,6 @@ img {
 .match-img img {
   width: 100px;
   height: 100px;
-  /* height: 18vh; */
-  /* width: auto; */
-
-  /* display: inline-block; */
-  /* vertical-align: baseline; */
 }
 .match-text {
   flex: 50%;
@@ -332,11 +327,12 @@ img {
   width: 90%;
   height: 18.5em;
   margin: 0 auto;
-  /* background-color: #123fff; */
+  /* background-color: #fff; */
+  margin-bottom: 1em;
+  /* padding: 0.5em; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 1em;
   gap: 0.5em;
 }
 .news-item {
@@ -373,33 +369,28 @@ img {
 /* news end */
 /* gallery begin */
 .gallery-wrapper {
-  width: 90vw;
-  height: 32em;
+  width: 90%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  gap: 0.4em;
   flex-wrap: wrap;
-  overflow: hidden;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.5em;
+  background-color: #fff;
+  padding: 0.8em;
+  border-radius: 5px;
+}
+.gallery-column {
+  flex: 24%;
+  max-width: 24%;
+}
+.gallery-column img {
+  width: 100%;
+  height: auto;
 }
 .gallery1 {
-  flex: 23%;
-  height: 16em;
-  border-radius: 0.3em;
-  background-color: #fff;
-  overflow: hidden;
-  box-shadow: 0.05em 0.05em 0.05em #aaa;
+  margin-top: 0.2em;
 }
-.gallery1 img {
-  width: 100%;
-  height: 100%;
-  /* transition: all 1s; */
-}
-
-/* .gallery1 img:hover {
-  transform: scale(1.1);
-} */
-
 /* gallery end */
 
 /* main end */
@@ -680,13 +671,26 @@ footer {
 .stats-container {
   width: 80%;
   margin: 0 auto;
+  margin-top: 1em;
   font-family: "Oswald", sans-serif;
+  background-color: #fff;
+  border-radius: 5px;
+  color: #000;
+  padding: 2em 4em;
 }
 .stats-header {
   display: flex;
   justify-content: space-between;
   font-size: 1.2em;
   padding: 0.5em 2em;
+  background-color: #bbb;
+  border-radius: 5px;
+}
+.stats-container h3,
+.stats-container h2 {
+  text-align: center;
+  border-bottom: 3px #666 solid;
+  padding-bottom: 0.8em;
 }
 .yellow {
   color: #ffff00;
@@ -699,14 +703,14 @@ footer {
   justify-content: space-between;
   font-weight: 100;
   font-size: 0.8em;
-  color: #bbb;
-  border-bottom: 0.05em #bbb solid;
+  color: #666;
+  border-bottom: 1px #999 solid;
   padding: 0.5em 3em;
 }
 /* playerstats end */
 
 /* gallery begin */
-.pictures {
+/* .pictures {
   width: 80%;
   margin: 0 auto;
 }
@@ -726,7 +730,7 @@ footer {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
-}
+} */
 
 /* gallery end */
 
@@ -836,7 +840,13 @@ footer {
   justify-content: space-evenly;
 }
 .videos-item {
-  text-align: center;
+  /* text-align: center; */
+  background-color: #ddd;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #999;
+}
+.videos-item h3 {
+  padding-left: 1em;
 }
 /* video page end */
 
@@ -933,15 +943,24 @@ footer {
   /* padding-top: 2em; */
 }
 #latest-news h2 {
-  padding-left: 0.5em;
+  padding: 0.5em;
+  border-bottom: 2px solid #999;
 }
 #latest-news li {
   padding: 0.5em;
+  padding-left: 1em;
   border-bottom: 1px solid #999;
   color: #000;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 0.8em;
+}
+#latest-news li::before {
+  content: url("/images/navigate_next_FILL0_wght400_GRAD0_opsz24.svg");
+  position: relative;
+  top: 0.4em;
+  width: 0.5em;
+  height: 0.5em;
 }
 
 /* news article end */
@@ -1033,12 +1052,12 @@ footer {
     flex: 48%;
   }
 
-  .gallery-wrapper {
-    height: 75em;
-  }
-  .gallery1 {
-    flex: 40%;
-    height: 18em;
+  /* .gallery-wrapper {
+    height: 55em;
+  } */
+  .gallery-column {
+    flex: 48%;
+    max-width: 48%;
   }
   /* main css end */
 
@@ -1103,11 +1122,23 @@ footer {
   /* news grid end */
   /* gallery begin */
 
-  .column {
+  /* .column {
     flex: 50%;
     max-width: 50%;
-  }
+  } */
   /* gallery end */
+  /* player stats begin  */
+  .stats-header {
+    font-size: 0.8em;
+  }
+
+  /* player stats end  */
+  /* shop page begin  */
+  .item {
+    flex: 48%;
+    width: 48%;
+  }
+  /* shop page end  */
 }
 
 /* 650 */
@@ -1199,12 +1230,16 @@ footer {
   /* .news-item-text-wrapper {
     padding-left: 17.5em;
   } */
-  .gallery-wrapper {
+  /* .gallery-wrapper {
     height: 51em;
-  }
-  .gallery1 {
+  } */
+  /* .gallery1 {
     height: 12em;
-    /* flex: 40%; */
+    flex: 90%;
+  } */
+  .gallery-column {
+    flex: 98%;
+    max-width: 98%;
   }
   /* main fixtures end */
 
@@ -1220,7 +1255,7 @@ footer {
     width: 90%;
   }
   .timeline-item p {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   /* about page end*/
 
@@ -1284,10 +1319,10 @@ footer {
   /* news grid end */
   /* gallery begin */
 
-  .column {
+  /* .column {
     flex: 100%;
     max-width: 100%;
-  }
+  } */
   /* gallery end */
   /* fans page begin */
   .club-logo img {
@@ -1310,5 +1345,20 @@ footer {
     width: 24.8em;
     height: 14em;
   }
+  .videos-item h3 {
+    overflow: hidden;
+    font-size: 0.8em;
+  }
   /* video page end */
+  /* shop page begin  */
+  .item {
+    flex: 98%;
+    width: 98%;
+  }
+  /* shop page end  */
+  /* news article begin  */
+  #latest-news li {
+    font-size: 1em;
+  }
+  /* news article end  */
 }
