@@ -82,16 +82,18 @@ img {
 }
 .dropdown-content {
   position: absolute;
-  left: -0.4em;
-  top: 1.5em;
+  left: -10px;
+  top: 60px;
   z-index: 1;
   background-color: rgba(8, 8, 8, 0.5);
   display: none;
   border-radius: 0.1em;
+  padding: 10px 0;
 }
 .dropdown-content a {
   display: inline-block;
-  padding: 1em;
+  width: 200px;
+  /* padding: 20px; */
   font-size: 0.8em;
   text-align: center;
 }
@@ -461,6 +463,41 @@ img {
 /* gallery end */
 
 /* main end */
+
+/* Fixtures&Results page begin */
+.schedule-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+  background-color: #fff;
+  color: #000;
+  border-radius: 15px;
+}
+.schedule-wrapper h2 {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 2px solid #999;
+}
+.schedule-item {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #ccc;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+}
+.schedule-item img {
+  width: 50px;
+  height: auto;
+  margin: 10px;
+}
+
+/* Fixtures&Results page end */
 
 /* footer begin */
 footer {
@@ -1299,6 +1336,13 @@ footer {
     font-size: 0.8em;
   }
   /* about page end */
+  /* Fixtures&Results page begin */
+  .schedule-wrapper,
+  .schedule-item {
+    width: 95%;
+  }
+
+  /* Fixtures&Results page end */
 }
 
 /* 650 */
@@ -1548,6 +1592,17 @@ footer {
     margin: 0;
     border-radius: 0;
   }
-
   /* About page end */
+  /* Fixtures&Results page begin */
+  .schedule-wrapper,
+  .schedule-item {
+    padding: 10px;
+
+    font-size: 0.9em;
+  }
+  .schedule-item img {
+    margin: 1px;
+  }
+
+  /* Fixtures&Results page end */
 }
