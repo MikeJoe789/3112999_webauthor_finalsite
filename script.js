@@ -8,6 +8,7 @@ menuButton.addEventListener("click", () => {
 // menu button end
 
 // showDropdown menu begin
+// from https://www.w3schools.com/howto/howto_js_dropdown.asp
 
 function showDropdown() {
   document.getElementById("myDropdown").classList.toggle("show");
@@ -27,7 +28,7 @@ window.onclick = function (event) {
 
 // showDropdown menu end
 
-// splide begin
+// splide begin ,from https://www.w3schools.com/howto/howto_js_slideshow.asp
 let slideIndex = 0;
 showSlides();
 
@@ -47,7 +48,7 @@ function showSlides() {
 
 // splide end
 
-// timer begin
+// timer begin from https://www.w3schools.com/howto/howto_js_countdown.asp
 let countDownDate = new Date("July 5, 2024 15:37:25").getTime();
 
 // Update the count down every 1 second
@@ -77,7 +78,8 @@ setInterval(function () {
 }, 1000);
 
 // timer end
-// gallery image click scale begin
+
+// gallery image click scale begin from https://www.w3schools.com/howto/howto_css_modal_images.asp
 
 var modal = document.querySelector("#myModal");
 var img = document.querySelectorAll(".column-img");

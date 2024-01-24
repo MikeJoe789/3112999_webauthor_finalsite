@@ -70,7 +70,7 @@ img {
 .header-nav ul {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.6em;
-  line-height: 1em;
+  line-height: 1.6em;
   display: flex;
   justify-content: space-between;
   padding: 0;
@@ -1239,16 +1239,21 @@ footer {
   #menuButton {
     display: flex;
   }
+  #header {
+    z-index: 10000;
+  }
   #header nav {
     position: absolute;
     width: 100%;
     top: 3.4em;
     max-height: 0;
     overflow: hidden;
+    background-color: #173e69;
   }
   #header .open {
-    max-height: 100vh;
-    z-index: 111;
+    max-height: 120vh;
+    /* z-index: 111; */
+    overflow: visible;
   }
   #header ul {
     flex-direction: column;
@@ -1256,10 +1261,10 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  #header nav {
+  /* #header nav {
     height: 100vh;
-    background-color: #173e69;
-  }
+ 
+  } */
   #header nav li {
     width: 90vh;
     /* border-bottom: 0.1em solid #bbb; */

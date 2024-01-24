@@ -144,10 +144,54 @@
     </footer>
     <script src="script.js"></script>
     <script type="text/javascript">
-      const getId = parseInt(window.location.href.split('?')[1].split('=')[1]);
+      // rendering these datas from news.json need Live Server, I can not use Live Server at this moment. so write this illogical code instead the following code 
+      const getId = parseInt(window.location.href.split('?')[1].split('=')[1]);  
+      async function newsData() { 
+        var aside=document.querySelector("#latest-news");
+        var ulElement = document.createElement('ul'); 
+        var liElement = document.createElement('li');
+        var aElement = document.createElement('a');  
+        var p = document.querySelector("#news-content");
+        p.innerHTML = "Leo and Inter Miami contested the first match of their pre-season campaign in El Salvador on Friday, playing out a goalless draw against the Central American country's national team.";
+        var newsImg = document.querySelector("#newsImg");
+        newsImg.src = "images/news2.jpg";
+        newsImg.alt = "LEO & INTER MIAMI'S FIRST OUTING OF PRE-SEASON CAMPAIGN";
+        var nwesHeader = document.querySelector("#news-header");
+        nwesHeader.innerHTML = "This page should rendering in a Live Server";  
+        document.title = "LEO & INTER MIAMI'S FIRST OUTING OF PRE-SEASON CAMPAIGN";  
+        const response = await fetch("news.json")   
+        if(response){
+          const data = await response.json();
+          for (let index = 0; index < data.length; index++) {
+            // const element = data[index];
+            let element = data[index];
+            let liElement = document.createElement('li');
+            let aElement = document.createElement('a');   
+            aElement.href = `news-article.html?id=${index}`;        
+            liElement.textContent = data[index].title;
+            aElement.appendChild(liElement);
+            ulElement.appendChild(aElement);
+            // ul.innerHTML = `<li>${data[index].title}</li>`;
+            if (element.id == getId) {
+              p.innerHTML = element.news;
+              newsImg.src = element.src;
+              newsImg.alt = element.title;
+              nwesHeader.innerHTML = element.title;  
+              document.title = element.title;            
+            }
+          }
+          aside.appendChild(ulElement);
+        } else {
+          console.log('no data');
+        }
+      }
+      newsData();
+
+/*
       fetch("news.json")
-        .then((response) => response.json())
-        .then((data) => {
+      .then((response) => response.json())
+      .then((data) => {
+        if(data){
           let aside=document.querySelector("#latest-news");
           const ulElement = document.createElement('ul');
           for (let index = 0; index < data.length; index++) {
@@ -172,7 +216,11 @@
             }
           }
           aside.appendChild(ulElement);
-        });
+
+        } else{
+          console.log('no data')
+        }
+      }); */
     </script>
   </body>
 </html>
