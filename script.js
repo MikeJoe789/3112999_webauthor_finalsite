@@ -6,6 +6,25 @@ menuButton.addEventListener("click", () => {
 });
 
 // menu button end
+// login cancel begin
+var loginContainer = document.querySelector("#loginContainer");
+var headerIcon = document.querySelector("#headerIcon");
+if (headerIcon) {
+  headerIcon.addEventListener("click", () => {
+    loginContainer.classList.toggle("show-block");
+  });
+}
+var span = document.getElementsByClassName("close")[0];
+if (span) {
+  span.onclick = function () {
+    loginContainer.classList.remove("show-block");
+  };
+}
+function cancelLogin() {
+  loginContainer.classList.remove("show-block");
+}
+
+// login cancel end
 
 // showDropdown menu begin
 // from https://www.w3schools.com/howto/howto_js_dropdown.asp
@@ -96,7 +115,7 @@ if (img) {
       // cbox[i].classList.toggle("red");
     });
   }
-  var span = document.getElementsByClassName("close")[0];
+  var span = document.getElementsByClassName("close")[1];
   if (span) {
     span.onclick = function () {
       modal.classList.remove("show-block");

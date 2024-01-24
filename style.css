@@ -105,6 +105,73 @@ img {
 .material-symbols-outlined:hover {
   cursor: pointer;
 }
+.login {
+  width: 30%;
+  height: 60%;
+  margin: auto;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  padding-top: 2em;
+  overflow: hidden;
+  position: relative;
+}
+.profileImg {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  display: block;
+}
+.login-form {
+  width: 80%;
+  margin: 0 auto;
+}
+.login-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0.2em;
+}
+.login-container button {
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.login-form-bottom {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 2em 0;
+  /* margin-top: 1em; */
+  position: absolute;
+  bottom: 0;
+}
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #ff0000;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  margin-left: 10%;
+}
+.psw {
+  float: right;
+  margin-right: 10%;
+  line-height: 2em;
+  /* font-size: 1.2em; */
+}
+.psw a {
+  color: #520ce9;
+  /* margin-left: 1em; */
+}
+
 /* header end */
 
 /* main carousel begin */
@@ -1113,6 +1180,12 @@ footer {
   #header nav {
     width: 80%;
   }
+  /* header begin  */
+  .login {
+    width: 70%;
+  }
+
+  /* header end */
   /* main css begin */
   .left-fixtures-news-wrapper {
     flex: 100%;
@@ -1296,6 +1369,12 @@ footer {
   }
 
   /* menu end */
+  /* header begin  */
+  .login {
+    width: 85%;
+  }
+
+  /* header end */
   /* main fixtures begin */
   .left-fixtures-news-text {
     font-size: 1em;
