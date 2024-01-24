@@ -144,3 +144,5 @@ if (btn) {
 }
 
 //fans page end
+
+// rendering json data js in news-article.html

@@ -22,48 +22,71 @@
   </head>
   <body>
     <header id="header">
-      <img class="logo" src="images/logo.png" alt="logo" />
+      <a href="index.html">
+        <img class="logo" src="images/logo.png" alt="logo" />
+      </a>
       <div id="menuButton">
         <span class="material-symbols-outlined header-icon"> menu </span>
       </div>
       <nav class="header-nav">
         <ul>
           <li>
-            <a class="top-nav" href="/">Home</a>
+            <a class="top-nav" href="index.html">Home</a>
           </li>
           <li>
             <a class="top-nav" href="about.html">About</a>
             <div class="dropdown-content" id="myDropdown">
-              <a href="about.html">Achievment</a>
+              <a href="achievment.html">Achievment</a>
               <a href="about-China.html">Messi&Me&China</a>
             </div>
           </li>
           <li>
             <a class="top-nav" href="news.html">News</a>
             <div class="dropdown-content" id="myDropdown">
-              <a href="news.html">fixtures&Results</a>
-              <a href="news.html">Player State</a>
+              <a href="fixturesandresults.html">fixtures&Results</a>
+              <a href="playerstats.html">Player Stats</a>
             </div>
           </li>
           <li>
             <a class="top-nav" href="gallery.html">Gallery</a>
-            <div class="dropdown-content" id="myDropdown">
-              <a href="gallery.html">Pictures</a>
-              <a href="gallery.html">Videos</a>
+            <div class="dropdown-content" id="myDropdown">     
+              <a href="videos.html">Videos</a>
             </div>
           </li>
           <li>
             <a class="top-nav" href="fans.html">Fans</a>
             <div class="dropdown-content" id="myDropdown">
-              <a href="fans.html">Club</a>
-              <a href="fans.html">Shop</a>
+              <a href="shop.html">Shop</a>
             </div>
           </li>
         </ul>
       </nav>
-      <span class="material-symbols-outlined header-icon">
+      <span class="material-symbols-outlined header-icon" id="headerIcon">
         account_circle
       </span>
+      <div id="loginContainer" class="modal">
+        <span class="close">&times;</span> 
+        <div class="login">
+          <!-- from https://www.w3schools.com/howto/howto_css_login_form.asp -->
+          <form class="login-form" method="post">
+            <img src="images/achive03.jpg" alt="profileImg" class="profileImg">      
+            <div class="login-container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>   
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div> 
+          </form>
+          <div class="login-form-bottom">
+            <button type="button" onclick="cancelLogin()" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
       <section class="slideshow-container">

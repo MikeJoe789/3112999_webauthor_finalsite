@@ -31,56 +31,76 @@
       <nav class="header-nav">
         <ul>
           <li>
-            <a class="top-nav" href="/">Home</a>
+            <a class="top-nav" href="index.html">Home</a>
           </li>
           <li>
             <a class="top-nav" href="about.html">About</a>
             <div class="dropdown-content" id="myDropdown">
-              <a href="about.html">Achievment</a>
+              <a href="achievment.html">Achievment</a>
               <a href="about-China.html">Messi&Me&China</a>
             </div>
           </li>
           <li>
             <a class="top-nav" href="news.html">News</a>
             <div class="dropdown-content" id="myDropdown">
-              <a href="news.html">fixtures&Results</a>
+              <a href="fixturesandresults.html">fixtures&Results</a>
               <a href="playerstats.html">Player Stats</a>
             </div>
           </li>
           <li>
             <a class="top-nav" href="gallery.html">Gallery</a>
-            <div class="dropdown-content" id="myDropdown">
-              <a href="gallery.html">Pictures</a>
+            <div class="dropdown-content" id="myDropdown">     
               <a href="videos.html">Videos</a>
             </div>
           </li>
           <li>
             <a class="top-nav" href="fans.html">Fans</a>
             <div class="dropdown-content" id="myDropdown">
-              <a href="fans.html">Club</a>
               <a href="shop.html">Shop</a>
             </div>
           </li>
         </ul>
       </nav>
-      <span id="login-icon" class="material-symbols-outlined header-icon">
+      <span class="material-symbols-outlined header-icon" id="headerIcon">
         account_circle
       </span>
+      <div id="loginContainer" class="modal">
+        <span class="close">&times;</span> 
+        <div class="login">
+          <!-- from https://www.w3schools.com/howto/howto_css_login_form.asp -->
+          <form class="login-form" method="post">
+            <img src="images/achive03.jpg" alt="profileImg" class="profileImg">      
+            <div class="login-container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>   
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div> 
+          </form>
+          <div class="login-form-bottom">
+            <button type="button" onclick="cancelLogin()" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
+      <!-- slides image fromhttps://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
       <section class="slideshow-container">
         <div class="mySlides fade">
           <!-- <div class="numbertext">1 / 3</div> -->
           <img src="images/image01.jpg" style="width:100%">
           <div class="text">Training At Night</div>
-        </div>
-        
+        </div>        
         <div class="mySlides fade">
           <!-- <div class="numbertext">2 / 3</div> -->
           <img src="images/image02.jpg" style="width:100%">
           <div class="text">Matches With CLUB</div>
-        </div>
-        
+        </div>        
         <div class="mySlides fade">
           <!-- <div class="numbertext">3 / 3</div> -->
           <img src="images/image03.jpg" style="width:100%">

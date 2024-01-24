@@ -87,7 +87,7 @@ img {
   z-index: 1;
   background-color: rgba(8, 8, 8, 0.5);
   display: none;
-  border-radius: 0.1em;
+  border-radius: 5px;
   padding: 10px 0;
 }
 .dropdown-content a {
@@ -1165,7 +1165,7 @@ footer {
 }
 .goods-categery a {
   color: #333;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 .goods-categery a:hover {
   color: #d5b048;
@@ -1383,12 +1383,13 @@ footer {
  
   } */
   #header nav li {
-    width: 90vh;
-    /* border-bottom: 0.1em solid #bbb; */
+    width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    border-bottom: 0.1em solid #fff;
   }
   .dropdown-content {
     width: 100%;
@@ -1399,14 +1400,14 @@ footer {
   }
   .top-nav {
     text-align: center;
-    padding: 0.8em;
+    padding: 0.6em;
+    line-height: 1.5em;
     width: 100%;
-    border-bottom: 0.1em solid #fff;
   }
   .dropdown-content a {
     width: 100%;
-    height: 3.5em;
-    border-bottom: 0.1em solid #fff;
+    /* height: 3.5em;     */
+    /* border-bottom: 0.1em solid #fff; */
   }
   .header-nav li:hover .dropdown-content {
     display: flex;
@@ -1605,4 +1606,7 @@ footer {
   }
 
   /* Fixtures&Results page end */
+  .top-nav {
+    font-weight: 600;
+  }
 }
