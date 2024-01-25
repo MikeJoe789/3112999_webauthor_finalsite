@@ -562,7 +562,7 @@ footer {
   left: 0%;
   width: 44%;
   height: 80%;
-  font-size: 1.2em;
+  font-size: 25px;
   background-color: #43a1d5;
   padding: 0.5em;
   border-radius: 5px;
@@ -571,7 +571,9 @@ footer {
   line-height: 1.5em;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
+
 .messi-bio img {
   width: 70%;
   margin-left: 30%;
@@ -1036,7 +1038,7 @@ footer {
 .club-logo {
   /* width: 80%; */
   margin: 0 auto;
-  padding-top: 1em;
+  padding-top: 2em;
   display: flex;
   justify-content: space-evenly;
 }
@@ -1159,13 +1161,18 @@ footer {
 .goods-categery {
   flex: 20%;
 }
-
+.goods-categery h3 {
+  width: 80%;
+  border-bottom: 2px solid #999;
+  padding-bottom: 15px;
+  padding-left: 10px;
+}
 .goods-categery li {
   padding: 0.3em;
 }
 .goods-categery a {
   color: #333;
-  /* font-weight: 600; */
+  font-weight: 600;
 }
 .goods-categery a:hover {
   color: #d5b048;
@@ -1196,6 +1203,12 @@ footer {
   width: 100%;
   height: auto;
 }
+.price {
+  font-family: "Oswald", sans-serif;
+
+  /* font-size: ; */
+}
+
 .rate {
   color: #ff0000;
   font-size: 0.8em;
@@ -1205,6 +1218,32 @@ footer {
 }
 .item p:nth-child(3) {
   color: #ff0000;
+}
+.shop-details-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* padding: 10px 0; */
+  margin-top: 15px;
+  font-family: "Oswald", sans-serif;
+}
+.shop-details {
+  width: 40%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+}
+.shop-but {
+  width: 40%;
+  background-color: #04aa6d;
+  border: none;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
 }
 /* shop pages end */
 
@@ -1333,7 +1372,7 @@ footer {
   /* shop page end  */
   /* about page begin*/
   .messi-bio-text {
-    font-size: 0.8em;
+    font-size: 15px;
   }
   /* about page end */
   /* Fixtures&Results page begin */
@@ -1460,7 +1499,11 @@ footer {
   /* main fixtures end */
 
   /* footer begin */
-
+  footer {
+    width: 90%;
+    padding: 0;
+    padding-top: 1em;
+  }
   .footer-left img {
     width: 3em;
     height: 3em;
@@ -1540,6 +1583,7 @@ footer {
     width: 6em;
     height: auto;
     border-radius: 50%;
+    margin-top: 1em;
   }
 
   /* fans page end */
